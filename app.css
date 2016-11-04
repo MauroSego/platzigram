@@ -1,0 +1,159 @@
+
+/*Tableros de index*/
+
+body{
+  min-height: 100vh;
+  margin: 0;
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+ 
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+header{
+  background-color: #255a83;
+  color: white;
+  padding: 1em;
+}
+footer{
+  height: 60px;
+  background-color: #255a83;
+}
+.titulo{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.botonera{
+  margin: 0.7em auto;
+}
+.container{
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.flex-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.boton{
+  background-color: red;
+  border-radius: 5px;
+  font-size: 1.2em;
+  height: 60px;
+  margin: 15px 5px 0 5px;
+  max-height: 65px;
+  padding: 0.15em;
+  text-align: center;
+  transition: 0.7s;
+  width: 250px;
+  color: white;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 10px;
+}
+.boton:hover{
+  background-color: #255a83;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+}
+.texto{
+  margin: 0 auto;
+}
+.img-conTexto{
+  width: 235px;
+  position: relative;
+  bottom: -6px;
+}
+.logos {
+  content: url(../img/logo-cablevision-fibertel.png);
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+
+/*--Procedimientos--*/
+.section{
+  padding: 0.8em;
+}
+table{
+  border-collapse: collapse;
+}
+thead{
+  background-color: #ffad33;
+  color: white;
+  font-size: 20px;
+}
+table, td, th{
+  border: 1px solid black;
+  padding: 0.5em;
+}
+.arrow{
+  background: url(Back_Arrow.png);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+  margin: 0 1em;
+}
+.arrow-white{
+  background: url(Back_Arrow_white.png);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+  /*margin: 0 1em;*/
+}
+.imgChica{
+  text-align: center;
+  border: 2px solid red;
+}
+.procedimiento{
+  margin-top: 4em;
+}
+.barraNavegacion{
+  position: fixed;
+  z-index: 2;
+  background-color: #E80C0F;
+  width: 100%;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 2px;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.selector{
+  background: white;
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  height: 45px;
+  border-radius: 12px;
+  margin-right: 1em;
+  margin-top: 0.5em;
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
