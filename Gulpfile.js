@@ -4,10 +4,10 @@ var rename = require('gulp-rename');
 
 gulp.task('styles', function () {
   gulp
-    .src('index.scss')
-    .pipe(sass())
-    .pipe(rename('app.css'))
-    .pipe(gulp.dest('public'));
+    .src('index.scss')  //tomo el scss
+    .pipe(sass())       //busco a sass para que lo transforme en css
+    .pipe(rename('app.css'))    //lo renombro como app.css
+    .pipe(gulp.dest('public')); //lo llevo a public
 })
 
-gulp.task('default', ['styles']);
+gulp.task('default', ['styles']); //Acá dejo la funcion que h ace 
