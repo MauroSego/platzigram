@@ -6,8 +6,17 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public')); //sirve los archivos estaticos (ejemplo css)
 
-//Cuando el user entra el index de la ruta 
+//Cuando el user entra el index de la ruta home
 app.get('/', function (req, res){
+  res.render('index') //llama al motor de vista (pug) y renderiza el html
+})
+
+//Cuando el user entra el index de la ruta signup
+app.get('/signup', function (req, res){
+  res.render('index') //llama al motor de vista (pug) y renderiza el html
+})
+
+app.get('/signin', function (req, res){
   res.render('index') //llama al motor de vista (pug) y renderiza el html
 })
 
