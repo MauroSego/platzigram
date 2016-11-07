@@ -4,6 +4,8 @@ var app = express();
 
 app.set('view engine', 'pug');
 
+app.use(express.static('public')); //sirve los archivos estaticos (ejemplo css)
+
 //Cuando el user entra el index de la ruta 
 app.get('/', function (req, res){
   res.render('index') //llama al motor de vista (pug) y renderiza el html
