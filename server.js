@@ -2,9 +2,11 @@ var express = require('express')
 
 var app = express();
 
+app.set('view engine', 'pug');
+
 //Cuando el user entra el index de la ruta 
 app.get('/', function (req, res){
-  res.send('Hola Mundo!')
+  res.render('index') //llama al motor de vista (pug) y renderiza el html
 })
 
 app.listen(3200, function (err){
