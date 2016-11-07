@@ -10,4 +10,11 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('public')); //lo llevo a public
 })
 
-gulp.task('default', ['styles']); //Acá dejo la funcion que h ace 
+gulp.task('assets', function () {
+  gulp
+    .src('assets/*')
+    .pipe(gulp.dest('public'));
+
+})
+
+gulp.task('default', ['styles', 'assets']); //Acá dejo la funcion que h ace 
