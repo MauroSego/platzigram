@@ -8,16 +8,16 @@ app.use(express.static('public')); //sirve los archivos estaticos (ejemplo css)
 
 //Cuando el user entra el index de la ruta home
 app.get('/', function (req, res){
-  res.render('index') //llama al motor de vista (pug) y renderiza el html
+  res.render('index', { title: 'Platzigram' }) //llama al motor de vista (pug) y renderiza el html
 })
 
 //Cuando el user entra el index de la ruta signup
 app.get('/signup', function (req, res){
-  res.render('index') //llama al motor de vista (pug) y renderiza el html
+  res.render('index', { title: 'Platzigram signup' }) //llama al motor de vista (pug) y renderiza el html
 })
 
 app.get('/signin', function (req, res){
-  res.render('index') //llama al motor de vista (pug) y renderiza el html
+  res.render('index', { title: 'Platzigram signin' }) //llama al motor de vista (pug) y renderiza el html
 })
 
 app.listen(3200, function (err){
