@@ -2,9 +2,13 @@ var express = require('express')
 
 var app = express();
 
+app.set('view engine', 'pug');
+
+app.use(express.static('public'));
+
 //Cuando el user entra el index de la ruta 
 app.get('/', function (req, res){
-  res.send('Hola Mundo!')
+  res.render('index')
 })
 
 app.listen(3200, function (err){
