@@ -4,3 +4,7 @@ Existen automatizadores como gulp que hacen tareas predefinidas como nosotros pa
 
 También hay preprocesadores de estilos que hacen un poco mas facil las cosas, se escribe menos códigos, se pueden definir variables en css, etc. En un entorno de desarrollo se lo puede utilizar y luego se compila para quedar como un css.
 Ademas de Sass existen Less y Stylus.  
+
+Jade (pug actualmente) es un preprocesador de html, se puede utilizar condicionales y facilita la estructura ya que no hay que hacer tanto marcado.
+Se puede utilizar en el backend para hacer una vista del html y requerir los css.
+Pug no es una libreria de desarrollo, porque si va a aparecer en la vista de la página. 
