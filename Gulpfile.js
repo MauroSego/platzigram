@@ -1,24 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
-<<<<<<< HEAD
-
-gulp.task('styles', function () {
-  gulp
-    .src('index.scss')
-    .pipe(sass())
-    .pipe(rename('app.css'))
-    .pipe(gulp.dest('public'));
-})
-
-gulp.task('assets', function(){
-	gulp
-		.src('assets/*')
-		.pipe(gulp.dest('public'));
-})
-
-gulp.task('default', ['styles']);
-=======
 var babel = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream')
@@ -48,6 +30,7 @@ function compile(watch) {
     bundle
       .transform(babel)
       .bundle()
+      .on('error', function(error){ console.log(error); this.emit('end') })
       .pipe(source('index.js'))
       .pipe(rename('app.js'))
       .pipe(gulp.dest('public'));
@@ -89,4 +72,3 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['styles', 'assets', 'build']); //Acá dejo la funcion que hace 
->>>>>>> 27d965879a82b2a05fceaf16d01b0c963247d423

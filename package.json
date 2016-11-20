@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "description": "Comparte tus fotos estudiando en platzi con la comunidad",
   "main": "server.js",
-  "scripts": {
-    "build": "gulp",
-    "start": "gulp watch|node server.js"
-  },
   "keywords": [
     "platzi",
     "javascript",
@@ -32,5 +28,9 @@
     "gulp-sass": "^2.3.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch & node server.js"
   }
 }
