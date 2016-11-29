@@ -13,9 +13,10 @@ page('/', function(ctx, next){
   			'username': 'maurosego',
   			'avatar': 'https://pbs.twimg.com/profile_images/776149477145149440/HU8WDG5l_400x400.jpg'
   		},
-  		url: 'office.jpg',
-  		likes: 1024,
-  		liked: false
+  		url: 'shelby.jpg',
+  		likes: 10,
+  		liked: false,
+      createdAt: new Date()
   	},
   	{
   		user: {
@@ -24,7 +25,8 @@ page('/', function(ctx, next){
   		},
   		url: 'office.jpg',
   		likes: 2,
-  		liked: true
+  		liked: true,
+      createdAt: new Date().setDate(new Date().getDate() - 10)
   	},
   ];
 
